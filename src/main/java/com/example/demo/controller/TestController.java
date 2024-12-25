@@ -14,4 +14,10 @@ public class TestController {
         return ResponseEntity.ok(test);
     }
 
+    @GetMapping(value = "/api/test2")
+    public ResponseEntity<Test> getTest2() {
+        Test test = new Test("test2", 30);
+        return ResponseEntity.ok(test);
+    }
+
 }
