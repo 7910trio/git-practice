@@ -10,7 +10,7 @@ public class TestController {
 
     @GetMapping(value = "/api/test")
     public ResponseEntity<Test> getTest() {
-        Test test = new Test("test1", 20);
+        Test test = new Test("I'm studying Jira", 20);
         return ResponseEntity.ok(test);
     }
 
